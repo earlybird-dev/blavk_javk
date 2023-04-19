@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:blavk_javk/components/game_board.dart';
 import 'package:flutter/material.dart';
 
@@ -19,13 +21,20 @@ class _GameScreenState extends State<GameScreen> {
 
   void tempFunc() async {
     final service = DeckService();
-    final deck = await service.newDeck(8);
+    final deck = await service.newDeck(6);
+    print(deck.deck_id);
     print(deck.remaining);
     print('--------------------------------');
     final draw = await service.drawCards(deck, count: 2);
     print(draw.cards.length);
     print('================================');
     print(draw.remaining);
+    print('================================');
+    final draw2 = await service.drawCards(deck, count: 2);
+    print(draw2.cards.length);
+    print('================================');
+    print(draw2.remaining);
+    print('================================');
   }
 
   @override

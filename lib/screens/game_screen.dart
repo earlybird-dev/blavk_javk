@@ -41,7 +41,11 @@ class _GameScreenState extends State<GameScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("BLAVKJAVK"),
+        title: Image.asset(
+          'logos/blavkjavk-low-resolution-logo-white-on-transparent-background.png',
+          width: 150,
+        ),
+        backgroundColor: Colors.red,
         actions: [
           TextButton(
             onPressed: () {},

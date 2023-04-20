@@ -1,25 +1,13 @@
-import 'package:blavk_javk/screens/game_screen.dart';
+import 'package:blavkjavk/providers/game_provider.dart';
+import 'package:blavkjavk/screens/game_screen.dart';
 import 'package:flutter/material.dart';
-
-// String getFullName(String firstName, String lastName) {
-//   return '$firstName $lastName';
-// }
-
-// void printMyName() {
-//   print(getFullName('Ha', 'Nguyen'));
-// }
-
-void test() {
-  final name = 'Foo';
-  if (name == 'Foo') {
-    print('Yes');
-  } else {
-    print('No');
-  }
-}
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [ChangeNotifierProvider(create: (_) => GameProvider())],
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {

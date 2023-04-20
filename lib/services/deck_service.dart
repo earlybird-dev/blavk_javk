@@ -1,5 +1,5 @@
-import 'package:blavk_javk/models/deck_model.dart';
-import 'package:blavk_javk/models/draw_model.dart';
+import 'package:blavkjavk/models/deck_model.dart';
+import 'package:blavkjavk/models/draw_model.dart';
 
 import 'api_service.dart';
 

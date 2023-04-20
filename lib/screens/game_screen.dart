@@ -1,7 +1,10 @@
 // ignore_for_file: avoid_print
 
-import 'package:blavk_javk/components/game_board.dart';
+import 'package:blavkjavk/components/game_board.dart';
+import 'package:blavkjavk/models/player_model.dart';
+import 'package:blavkjavk/providers/game_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../services/deck_service.dart';
 
@@ -13,28 +16,12 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
+  late final GameProvider _gameProvider;
+
   @override
   void initState() {
+    _gameProvider = Provider.of<GameProvider>(context, listen: false);
     super.initState();
-    tempFunc();
-  }
-
-  void tempFunc() async {
-    final service = DeckService();
-    final deck = await service.newDeck(6);
-    print(deck.deck_id);
-    print(deck.remaining);
-    print('--------------------------------');
-    final draw = await service.drawCards(deck, count: 2);
-    print(draw.cards.length);
-    print('================================');
-    print(draw.remaining);
-    print('================================');
-    final draw2 = await service.drawCards(deck, count: 2);
-    print(draw2.cards.length);
-    print('================================');
-    print(draw2.remaining);
-    print('================================');
   }
 
   @override
@@ -42,15 +29,21 @@ class _GameScreenState extends State<GameScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Image.asset(
-          'logos/blavkjavk-low-resolution-logo-white-on-transparent-background.png',
-          width: 150,
+          'logos/blavkjavk-website-favicon-white.png',
+          height: 50,
         ),
         backgroundColor: Colors.red,
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () async {
+              final players = [
+                PlayerModel(name: "You", isHuman: true),
+                PlayerModel(name: "Dealer", isHuman: false),
+              ];
+              await _gameProvider.newGame(players);
+            },
             child:
-                const Text("New Cards", style: TextStyle(color: Colors.white)),
+                const Text("New Game", style: TextStyle(color: Colors.white)),
           )
         ],
       ),

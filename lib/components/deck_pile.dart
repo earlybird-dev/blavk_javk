@@ -1,5 +1,5 @@
-import 'package:blavkjavk/components/card_back.dart';
-import 'package:blavkjavk/constants.dart';
+import 'package:BLAVKJAVK/components/card_back.dart';
+import 'package:BLAVKJAVK/constants.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';

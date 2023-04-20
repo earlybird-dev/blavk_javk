@@ -1,4 +1,4 @@
-import 'package:blavkjavk/models/player_model.dart';
+import 'package:BLAVKJAVK/models/player_model.dart';
 
 class Turn {
   final List<PlayerModel> players;

@@ -1,8 +1,8 @@
 // ignore_for_file: avoid_print
 
-import 'package:blavkjavk/components/game_board.dart';
-import 'package:blavkjavk/models/player_model.dart';
-import 'package:blavkjavk/providers/game_provider.dart';
+import 'package:BLAVKJAVK/components/game_board.dart';
+import 'package:BLAVKJAVK/models/player_model.dart';
+import 'package:BLAVKJAVK/providers/game_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,5 +1,5 @@
-import 'package:blavkjavk/providers/game_provider.dart';
-import 'package:blavkjavk/screens/game_screen.dart';
+import 'package:BLAVKJAVK/providers/game_provider.dart';
+import 'package:BLAVKJAVK/screens/game_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     // printMyName();
 
     return MaterialApp(
-      title: 'BLAVKJAVK - Practice Perfect Blackjack ',
+      title: 'BLAVKJAVK - Beat the Dealer.',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,

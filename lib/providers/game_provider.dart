@@ -1,7 +1,7 @@
-import 'package:blavkjavk/models/card_model.dart';
-import 'package:blavkjavk/models/player_model.dart';
-import 'package:blavkjavk/models/turn_model.dart';
-import 'package:blavkjavk/services/deck_service.dart';
+import 'package:BLAVKJAVK/models/card_model.dart';
+import 'package:BLAVKJAVK/models/player_model.dart';
+import 'package:BLAVKJAVK/models/turn_model.dart';
+import 'package:BLAVKJAVK/services/deck_service.dart';
 import 'package:flutter/material.dart';
 
 import '../models/deck_model.dart';

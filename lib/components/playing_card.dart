@@ -1,6 +1,6 @@
-import 'package:blavkjavk/components/card_back.dart';
-import 'package:blavkjavk/constants.dart';
-import 'package:blavkjavk/models/card_model.dart';
+import 'package:BLAVKJAVK/components/card_back.dart';
+import 'package:BLAVKJAVK/constants.dart';
+import 'package:BLAVKJAVK/models/card_model.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 

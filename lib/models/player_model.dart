@@ -1,4 +1,4 @@
-import 'package:blavkjavk/models/card_model.dart';
+import 'package:BLAVKJAVK/models/card_model.dart';
 
 class PlayerModel {
   final String name;

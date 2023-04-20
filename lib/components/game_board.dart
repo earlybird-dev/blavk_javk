@@ -1,6 +1,6 @@
-import 'package:blavkjavk/components/deck_pile.dart';
-import 'package:blavkjavk/models/player_model.dart';
-import 'package:blavkjavk/providers/game_provider.dart';
+import 'package:BLAVKJAVK/components/deck_pile.dart';
+import 'package:BLAVKJAVK/models/player_model.dart';
+import 'package:BLAVKJAVK/providers/game_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

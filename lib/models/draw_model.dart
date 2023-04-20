@@ -1,5 +1,5 @@
-import 'package:blavkjavk/models/card_model.dart';
-import 'package:blavkjavk/models/card_model.dart';
+import 'package:BLAVKJAVK/models/card_model.dart';
+import 'package:BLAVKJAVK/models/card_model.dart';
 
 class DrawModel {
   final int remaining;

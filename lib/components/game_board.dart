@@ -16,7 +16,7 @@ class GameBoard extends StatelessWidget {
             ? Stack(
                 children: [
                   Align(
-                    alignment: Alignment.center,
+                    alignment: Alignment.bottomCenter,
                     child: GestureDetector(
                         onTap: () async {
                           await model.drawCards(model.turn.currentPlayer);
@@ -24,32 +24,32 @@ class GameBoard extends StatelessWidget {
                         child:
                             DeckPile(remaining: model.currentDeck!.remaining)),
                   ),
+                  // Align(
+                  //   alignment: Alignment.topCenter,
+                  //   child: CardList(player: model.players[1]),
+                  // ),
                   Align(
-                    alignment: Alignment.topCenter,
-                    child: CardList(player: model.players[1]),
-                  ),
-                  Align(
-                    alignment: Alignment.bottomCenter,
+                    alignment: Alignment.center,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              if (model.turn.currentPlayer ==
-                                  model.players.first)
-                                ElevatedButton(
-                                    onPressed: model.canEndTurn
-                                        ? () {
-                                            model.endTurn();
-                                          }
-                                        : null,
-                                    child: const Text("End Turn"))
-                            ],
-                          ),
-                        ),
+                        // Padding(
+                        //   padding: const EdgeInsets.all(8.0),
+                        //   child: Row(
+                        //     mainAxisAlignment: MainAxisAlignment.center,
+                        //     children: [
+                        //       if (model.turn.currentPlayer ==
+                        //           model.players.first)
+                        //         ElevatedButton(
+                        //             onPressed: model.canEndTurn
+                        //                 ? () {
+                        //                     model.endTurn();
+                        //                   }
+                        //                 : null,
+                        //             child: const Text("End Turn"))
+                        //     ],
+                        //   ),
+                        // ),
                         CardList(player: model.players[0]),
                       ],
                     ),

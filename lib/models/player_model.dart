@@ -12,7 +12,8 @@ class PlayerModel {
   });
 
   addCards(List<CardModel> newCards) {
-    cards = [...cards, ...newCards];
+    // cards = [...cards, ...newCards];
+    cards = [...newCards];
   }
 
   removeCard(CardModel card) {
